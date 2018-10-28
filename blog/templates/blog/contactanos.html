@@ -1,0 +1,123 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Perris
+        </title>
+        <meta charset="UTF=8"/>
+        <META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="{% static 'css/csstarea.css' %}" type="text/css" rel="stylesheet"/>
+        <link href="{% static 'css/flexboxgrid.css' %}" type="text/css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src = "{% static 'JavaScript/funciones.js' %}"> </script>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    </head>
+<body margin ="0%">
+    
+    <nav>
+    <header >
+        <div class ="nav">
+          
+            <div class ="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                <img class="logo" src="/static/img/logo.png"  height= "50" align=left , width=250>
+               </div>
+         
+         <ul class="nav">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+         <li><a href="{% url 'indesssx' %}"><font color="white">INICIO</font></a></li>
+         <li><a><font color="white">QUIENES SOMOS </font></a></li>
+         <li><a  href="{% url 'servicios' %}"><font color="white">SERVICIOS </font> </a></li>
+         <li><a  href="{% url 'contactanos' %}"><font color="white">CONTACTENOS</font> </a></li>
+		
+
+        </div>
+        </ul>
+    </div>
+    </div>
+         
+    </div>
+          
+    </header>
+    
+        
+            <img class="perro" src ="/static/img\perro.png"  alt="perro"  width="700" height="250"/>
+                 
+			
+             
+              <br/><br/>
+             <div class="container">
+                    <article class="col1">
+                            <div class="numero">  +569 45648464 </div>  
+                           </article>       
+                           <article class="col1" align="right" >
+                                <div class="numeroREscate"><FONT FACE=" SMALL FONTS" SIZE=4>  rescate &nbsp;</FONT> </div>  
+                           </article>          
+                           <article class="col1">
+                                <div class="numero"><FONT FACE=" SMALL FONTS" SIZE=4> y adopcion de perros callejeros</FONT> </div>  
+                           </article>
+                           <article class="col1">
+                                   
+
+                           </article>  
+                           <article class="col1">
+                                        <img src="/static/img\face.png" width="45"/>
+                                        <img src="/static/img\google.png" width="45">
+                                        <img src="/static/img\insta.png" width="45">
+                                        <img src="/static/img\gmail.png" width="45">
+                                   
+                           </article>                  
+                
+             </div>
+
+    </nav>
+	
+              
+                           
+                           
+                            </head>
+                            
+                          
+                            <body>
+                                    <br></br>
+                                    {% block content %}
+                                    <form name="datos" method="POST" > {% csrf_token %}                                <center>
+                                            {{form.as_p}}
+                                            <input class="button" type="submit" onclick="return validarRut()" id="boton" value="Enviar" on>
+                                    
+                            </table>
+                        </center>
+                            </form>
+                            {% endblock %}
+                            </body>
+                      
+            </div>   
+         </article>
+
+      
+               
+             </div>
+         </article>
+        </div>
+        </div>
+    </section>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <footer>
+           
+             &nbsp;&nbsp; Desarrollo Web y Mobile <br>
+
+            <br></br>
+            <br></br>
+    </footer>
+  
+</body>
+</html>

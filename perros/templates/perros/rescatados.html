@@ -1,0 +1,115 @@
+
+
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Perris
+        </title>
+        <meta charset="UTF=8"/>
+        <META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="{% static 'css/csstarea.css' %}" type="text/css" rel="stylesheet"/>
+        <link href="{% static 'css/flexboxgrid.css' %}" type="text/css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{% static 'style/main.css' %}">
+
+        <script src = "{% static 'JavaScript/funciones.js' %}"> </script>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    </head>
+<body margin ="0%">
+    
+    <nav>
+    <header >
+        <div class ="nav">
+          
+            <div class ="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                <img class="logo" src="/static/img/logo.png"  height= "50" align=left , width=250>
+               </div>
+         
+         <ul class="nav">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+         <li><a href="{% url 'indesssx' %}"><font color="white">INICIO</font></a></li>
+         <li><a><font color="white">QUIENES SOMOS </font></a></li>
+         <li><a href="{% url 'servicios' %}" ><font color="white">SERVICIOS </font> </a></li>
+         <li><a href="{% url 'contactanos' %}"><font color="white">CONTACTENOS</font> </a></li>
+		
+
+        </div>
+        </ul>
+    </div>
+    </div>
+         
+    </div>
+          
+    </header>
+<body >
+   
+      
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img id="perro1" src="{% static 'img/Perro1.jpg' %}" alt="perro" width="700" height="250"/>
+                        <div class="carousel-caption">
+                          <h3>Juanito</h3>
+                          <p>Juanito fue rescatado y ahora es millonario</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img id="perro2" src="{% static 'img/Perro2.jpg' %}" alt="" width="700" height="250"/>
+                        <div class="carousel-caption">
+                          <h3>Dolores</h3>
+                          <p>Fue rescatado junto a juanito, ahora es modelo</p>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img id="perro3" src="{% static 'img/Perro3.jpg' %}" alt="" width="700" height="250"/>
+                        <div class="carousel-caption">
+                          <h3>Lucho</h3>
+                          <p>luis ahora disfruta de sus compras en dubai</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                   </div>
+    
+                   <div class="container">
+                    <div class = "row mt-3">
+                        <div class = "col 6">
+                            {% block content %}
+                            <form name="datos" method="POST" enctype="multipart/form-data"> {% csrf_token %}   
+                            {{ form.as_p }}
+                           
+                                <input class="btn btn-primary" type="submit" value="Enviar">
+                            </form>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </html>

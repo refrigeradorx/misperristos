@@ -1,0 +1,16 @@
+http://127.0.0.1:8000/
+python manage.py makemigrations blog
+
+para cuando quede la caga
+
+git status
+git add "nombre archivo"
+git commit -m "mensaje"
+git commit
+git log
+git config --global user.email "texto"
+git config --global user.name "text"
+git branch "text"
+git branch
+git add .
+git push origin master

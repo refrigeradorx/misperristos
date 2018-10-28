@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form {
+    background: rgba(0,0,0,.7);
+    max-width: 600px;
+    width: 90%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    /*padding: 40px;*/
+}
+
+
+
+input,select{
+    /* Para darle el mismo tamaño a todos los campos de texto */
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 10px 15px;
+    margin: 10px 10px 20px 50px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #36ff1b;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+label{
+    margin: 10px 10px 10px 50px;
+}
+#boton{
+    background: #ff1b85;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+#boton:hover{
+    background: #1b1fff;
+}

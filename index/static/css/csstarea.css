@@ -1,0 +1,315 @@
+
+header{
+    background-color: #01DF01;
+    }
+
+footer{
+        background-color: #FAFAFA;
+        font-family:  'Arial ';
+            font-size: 10px;
+            text-align: left;
+            color: #000000;
+    }
+    .container{
+        display: flex;
+        margin-left: 1em;
+    }
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+}   
+    .texto-encima2{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado2{
+        position: absolute;
+        top: 50%;
+        left:25%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+    }   
+    .texto-encima3{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .centrado3{
+        position: absolute;
+        top: 50%;
+        left:25%;
+        transform: translate(-50%, -50%);
+        color: #000000;
+    }   
+    .container2{
+        display: flex;
+        margin-left: 2em;
+    }
+    .col1{
+        width: 20%;
+        margin: 0%
+       
+    }
+    #main{
+        height: 180px;
+    }
+
+section{
+            color: #000000;
+    }
+    strong{
+
+        font-size: 20px
+    }
+.col{
+        width: 50%;
+        box-sizing: border-box;
+  -ms-flex: 0 0 auto;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+       
+    }
+
+    @media ( max-width: 900px) {
+        #main{
+            height: auto;
+        }
+        
+        .col {
+            width: 100%;
+            float: none;
+            margin:0;
+            padding-left:0;
+            
+        }
+    }
+   
+    .nav {
+        color: aliceblue;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .nav li {
+        display: inline-block;
+        font-size: 10px;
+        padding: 10px;
+        
+    }
+    .article1{
+        text-align: right;
+        color: #000000;
+    }
+
+    .article2 {
+            
+            text-align: left;
+            color: #000000;
+        }
+ .logo{
+       
+        margin:5px ;
+        margin-left:1%;
+         
+        
+       }
+.inicio
+{
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.miau
+{   
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display:flex;
+}
+
+
+.perro {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+       }
+
+
+    .numero {
+            font-family: Arial;
+            font-size: 15px;
+            text-align: left;
+        	display:block;
+            color: aliceblue
+        }
+        .numeroREscate {
+            font-family: Arial;
+            font-size: 15px;
+            text-align: right;
+        	display:block;
+            color: aliceblue
+        }
+        .asd{
+            text-align: right;
+            margin-right: 10em;
+        }
+        asd li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+nav{
+    background-color: #04B431;
+    }
+	
+	
+	.contenedor{
+   
+        text-align: right;
+        margin-left: 10em;
+        
+        
+        
+    }
+    .contenedor2{
+        margin-right: 10em;
+        text-align: left;
+    }
+    
+    
+    header{
+        background-color: rgb(60, 201, 147);
+        }
+    
+     .logo{
+           
+            margin:5px auto;
+            margin-left:1%;  
+            
+           }
+    .numero
+    { 
+        color: aliceblue;
+        list-style-type: none;
+        text-align: left;
+        margin: 0;
+        padding: 0; 
+    }
+    .asd{
+        text-align: right;
+        margin-right: 10em;
+    }
+    
+    
+    
+    .perro {
+            margin:10px auto;
+            display:block;
+           }
+    .perrito {
+    
+            margin:10px auto;
+           }
+    
+        
+     .descripcion {
+        color: aliceblue;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        margin-right: 20em; 
+        
+                
+    
+            }
+
+        a:hover
+        {
+            opacity: 0.4;
+        }
+      .nav {
+                color: aliceblue;
+                list-style-type: none;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .asd li {
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px;
+            }
+     .navs {
+                color: rgb(0, 0, 0);
+                list-style-type: none;
+                text-align: right;
+                margin: 0;
+                padding: 0;
+            }
+            .navss {
+                color: aliceblue;
+                list-style-type: none;
+                text-align: right;
+                margin: 0;
+                padding: 0;
+            }
+    nav{
+        background-color: rgb(5, 170, 107);
+        }
+    
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .navs li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .navss li {
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+        }
+    
+       
+    body{
+        margin:0px;
+        
+    }
+
+    .collage{
+        box-sizing: border-box;
+        margin-left: 25.5em;
+        }
+
+        .wrapper {
+            display: flex;
+          }
+          .column {
+            display: flex;
+            flex-direction: column;
+          }
+          .column > div {
+            background: rgb(5, 170, 107);
+            margin:0em;
+            padding: 0.5em;
+          }
