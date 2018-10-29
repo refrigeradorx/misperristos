@@ -3,6 +3,10 @@ from django.shortcuts import render,redirect
 from .forms import PostForm
 # Create your views here.
 
+def lista_rescate(request):
+    rescata = Post.objects.all()
+    return render(request, "perros/rescatados.html",{'rescata':rescata})
+
 def formularioperro(request):
     if request.method == "POST":
         form = PostForm(request.POST, request.FILES)

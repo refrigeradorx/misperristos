@@ -23,3 +23,4 @@ urlpatterns = [
     url(r'^servicios/', include('perros.urls')), #se utiliza include para apuntar al archivo urls de contacto
     url(r'', include('index.urls')), #se utiliza include para apuntar al archivo urls de contacto
 ]
+
